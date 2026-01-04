@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/card_bg">
+
+    <!-- USER NAME / ID -->
+    <TextView
+        android:id="@+id/userText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User: John Doe"
+        android:textStyle="bold"
+        android:textSize="14sp"/>
+
+    <!-- BIN ID -->
+    <TextView
+        android:id="@+id/binText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bin ID: BIN_123"
+        android:textSize="13sp"
+        android:layout_marginTop="4dp"/>
+
+    <!-- DATE -->
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: 2026-01-04"
+        android:textSize="12sp"
+        android:layout_marginTop="4dp"/>
+
+    <!-- POINTS -->
+    <TextView
+        android:id="@+id/pointsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+10 Points"
+        android:textStyle="bold"
+        android:textColor="#2ECC71"
+        android:layout_marginTop="6dp"/>
+
+</LinearLayout>

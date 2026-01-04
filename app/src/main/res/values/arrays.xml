@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="branch_list">
+        <item>Select Branch</item>
+        <item>CS</item>
+        <item>IT</item>
+        <item>ECE</item>
+        <item>EE</item>
+        <item>ME</item>
+        <item>Civil</item>
+    </string-array>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "6473475350",
+    "project_id": "eqaudx",
+    "storage_bucket": "eqaudx.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:6473475350:android:ac3db630d55dae6fea5c37",
+        "android_client_info": {
+          "package_name": "com.team.equadx"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeUAbl1e6R-xtb2Tljt0ewZn8LpSJeCgg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7F6">
+
+    <!-- ================= GREEN HEADER ================= -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@drawable/green_gradient"
+        android:orientation="vertical"
+        android:paddingTop="48dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <!-- Top Row -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Hi, User! 🌱"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_user"
+                app:tint="#FFFFFF"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- ================= FLOATING WALLET CARD ================= -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/card_bg"
+        android:elevation="6dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Wallet Row -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Wallet"
+                    android:textColor="#4CAF50"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/walletText"
+                    android:text="0 Coins"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_coin"/>
+        </RelativeLayout>
+
+        <!-- Scan Button -->
+        <Button
+            android:id="@+id/scanButton"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:text="SCAN BIN QR"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="#2ECC71"
+            android:background="@drawable/scan_button_bg"/>
+    </LinearLayout>
+
+    <!-- ================= FEATURE SECTION ================= -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="320dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="2"
+            android:alignmentMode="alignMargins"
+            android:useDefaultMargins="true">
+
+            <!-- Stock Market -->
+            <LinearLayout
+                android:id="@+id/cardStock"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/card_ripple_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_stock_market"
+                    app:tint="@null"/>
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:text="Stock Market"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <!-- AR Graffiti -->
+            <LinearLayout
+                android:id="@+id/cardAr"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/card_ripple_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_ar_graffiti"
+                    app:tint="@null"/>
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:text="AR Graffiti"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- My Pet -->
+            <LinearLayout
+                android:id="@+id/cardPet"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/card_ripple_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_my_pet"
+                    app:tint="@null"/>
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:text="My Pet"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- Marketplace -->
+            <LinearLayout
+                android:id="@+id/cardMarketplace"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/card_ripple_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_marketplace"
+                    app:tint="@null"/>
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:text="Marketplace"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- Leaderboard -->
+            <LinearLayout
+                android:id="@+id/cardLeaderboard"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/card_ripple_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_leaderboard"
+                    app:tint="@null"/>
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:text="Leaderboard"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- Report Issue -->
+            <LinearLayout
+                android:id="@+id/cardReport"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/card_ripple_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_report_issue"
+                    app:tint="@null"/>
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:text="Report Issue"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+<!--                <Button-->
+<!--                    android:id="@+id/btnOpenQrGenerator"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="48dp"-->
+<!--                    android:layout_margin="16dp"-->
+<!--                    android:text="Open QR Generator (TEMP)"-->
+<!--                    android:backgroundTint="#2ECC71"-->
+<!--                    android:textColor="#FFFFFF"/>-->
+
+            </LinearLayout>
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+    <!-- ================= BOTTOM NAV ================= -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF"
+        android:elevation="8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_home"
+            app:tint="#2ECC71"/>
+
+        <ImageView
+            android:id="@+id/bottomQrScanner"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_scan"
+            app:tint="#2ECC71"/>
+
+        <ImageView
+            android:id="@+id/btnProfileBottom"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_user"
+            app:tint="#2ECC71"/>
+    </LinearLayout>
+
+</FrameLayout>

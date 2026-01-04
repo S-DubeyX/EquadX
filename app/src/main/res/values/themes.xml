@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base app theme -->
+    <style name="Theme.EquadX" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">#2ECC71</item>
+        <item name="colorPrimaryVariant">#27AE60</item>
+        <item name="colorSecondary">#6A11CB</item>
+    </style>
+
+    <!-- NO ACTION BAR THEME (FIXED) -->
+    <style name="Theme.EquadX.NoActionBar"
+        parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- ✅ FIX: android: prefix added -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <!-- Transparent status bar -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+    </style>
+
+</resources>

@@ -1,5 +1,12 @@
 # 🌱 EquadX – Smart QR-Based Waste Management System
 
+For Testing Application :
+Student Email id : test@gmail.com
+Student Password : 123456
+
+Admin Email id : admin@gmail.com
+Admin Password : 123456
+
 EquadX is an Android application designed to promote responsible waste disposal using **QR code scanning, rewards, and real-time tracking**.  
 Users earn points by scanning QR codes placed on smart waste bins, while admins manage bins, QR codes, and monitor activity.
 
